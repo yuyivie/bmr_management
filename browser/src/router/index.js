@@ -56,7 +56,7 @@ export const asyncRouterMap = [
   {
     path: '/system',
     component: Layout,
-    meta: { perm:'m:sys', title: '系统', icon: 'chart' },
+    meta: { perm:'m:sys', title: '系统管理', icon: 'chart' },
     children: [
       {
         path: 'user_manage',
@@ -86,17 +86,6 @@ export const asyncRouterMap = [
       },
     ]
   },
-  {
-    path: '/menu1',
-    component: Layout,
-    children: [{
-      path: 'index',
-      name: 'menu1',
-      component: _import('menu/menu1'),
-      meta: { perm:'m:menu1', title: '菜单1', icon: 'icon' }
-    }]
-  },
-
 
   {
     path: '/menu2',
